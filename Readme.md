@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksei Bissenek](https://up.htmlacademy.ru/htmlcss/36/user/2110521).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Ветер` https://htmlacademy.ru/profile/id73199.
 
 ---
 
