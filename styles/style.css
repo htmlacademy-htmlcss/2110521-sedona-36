@@ -154,9 +154,18 @@ body {
 
 
 .navigation-current {
-  border-bottom: 2px solid rgba(117, 98, 87, 1);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+}
+
+.navigation-current::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgba(117, 98, 87, 1);
+  top: 43px;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 
 
@@ -271,6 +280,8 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+  display: block;
+  max-width: 175px;
 }
 
 
@@ -483,7 +494,7 @@ body {
 }
 
 .mail-background {
-  background-image: url(../img/mail-background.jpg);
+  background-image: url(../img/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #000000;
@@ -526,11 +537,10 @@ body {
   border: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
-  width: 232px;
-  height: 52px;
-  padding: 0;
+  padding: 8px 50px;
+  max-width: 232px;
 }
 
 .button-blue:hover {
@@ -552,8 +562,11 @@ body {
   height: 52px;
   padding: 15px 20px;
   border: none;
+  font-size: 18px;
+  line-height: 24px;
   background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
+  border: 3px solid transparent;
 }
 
 .page-footer {
@@ -565,10 +578,9 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding: 45px 70px 50px 70px;
 }
 
 
@@ -774,13 +786,16 @@ body {
   line-height: 24px;
 }
 
-.input-price:hover {
+.input-price:hover,
+.mail-field:hover {
   background: #E6E6E6;
 }
 
-.input-price:focus {
+.input-price:focus,
+.mail-field:focus {
   background: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .price-name {
@@ -790,7 +805,7 @@ body {
   width: 17px;
   height: 24px;
   top: 12px;
-  right: 15px;
+  right: 20px;
   color: #BDBDBD;
 }
 
@@ -842,6 +857,7 @@ body {
   height: 20px;
   box-shadow: inset 0 0 0 5px #ffffff;
 }
+
 .control-input:focus-visible+.control-mark {
   outline: 3px solid #83B3D3;
 }
@@ -1022,11 +1038,13 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
 }
+
 .result-icon-active,
 .hotel-result-icon:hover,
 .hotel-result-icon:active {
   border: 2px solid #000000;
 }
+
 .catalog-button:focus .hotel-result-icon,
 .catalog-button:focus {
   border: 2px solid #68A2CA;
@@ -1077,6 +1095,7 @@ body {
   row-gap: 16px;
   column-gap: 20px;
 }
+
 .product-card-image {
   display: block;
   width: 100%;
@@ -1133,11 +1152,13 @@ body {
 .button-green {
   background-color: #7DB54F;
 }
+
 .button-green:hover,
 .button-green:focus {
   background: #6C9E42;
   outline: none;
 }
+
 .button-green:active {
   background: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
@@ -1148,6 +1169,7 @@ body {
   padding: 0;
   margin: 0;
   gap: 6px;
+  align-items: center;
 }
 
 .product-card-rating {
