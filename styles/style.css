@@ -20,12 +20,12 @@
   box-sizing: border-box;
 }
 
-ul,
+/* ul,
 li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -92,6 +92,7 @@ body {
 }
 
 .navigation-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -110,8 +111,6 @@ body {
 }
 
 .navigation-icon {
-  min-width: 44px;
-  min-height: 20px;
   padding: 22px 12px;
 }
 
@@ -259,6 +258,7 @@ body {
 }
 
 .advantages-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -369,6 +369,7 @@ body {
 }
 
 .activities-list {
+  list-style-type: none;
   display: flex;
   list-style: none;
   align-items: center;
@@ -582,6 +583,7 @@ body {
 }
 
 .footer-social-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -711,6 +713,9 @@ body {
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+}
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .catalog-filter-title {
@@ -1006,6 +1011,7 @@ body {
 }
 
 .hotel-result-list {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1060,6 +1066,7 @@ body {
 }
 
 .product-list {
+  list-style-type: none;
   margin: 0 70px;
   padding: 0;
   display: grid;
@@ -1152,6 +1159,7 @@ body {
 }
 
 .product-card-star-list {
+  list-style-type: none;
   display: flex;
   padding: 0;
   margin: 0;
@@ -1178,6 +1186,7 @@ body {
 }
 
 .pagination {
+  list-style-type: none;
   display: flex;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -1252,6 +1261,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+  z-index: 1000;
 }
 
 .modal {
