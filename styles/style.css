@@ -1208,6 +1208,7 @@ body {
 .pagination-link:focus {
   background: #68A2CA;
   border: 1px solid #82B3D3;
+  outline: none;
 }
 
 .pagination-link:active {
