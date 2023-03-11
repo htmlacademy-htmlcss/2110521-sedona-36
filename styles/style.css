@@ -84,6 +84,11 @@ body {
   column-gap: 32px;
 }
 
+.navigation-list:nth-of-type(1) .navigation-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .navigation-list {
   list-style-type: none;
   margin: 0;
@@ -130,7 +135,7 @@ body {
   color: white;
   background: #7DB54F;
   border-radius: 10px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   text-align: center;
   padding-bottom: 4px;
@@ -176,6 +181,9 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .button:hover {
@@ -263,6 +271,10 @@ body {
 
 .advantages-image {
   display: block;
+}
+
+.advantages-item {
+  display: flex;
 }
 
 .advantages-item-title {
@@ -855,13 +867,13 @@ body {
 .control-input:focus-visible+.control-mark {
   outline: 3px solid #83B3D3;
 }
-.control-input:disabled .control {
+.control:has([disabled]) .control-mark,
+.control:has([disabled]) .control-label {
   opacity: 0.3;
   pointer-events: none;
-  cursor: not-allowed;
 }
 
-.control:hover {
+.control:not(:has([disabled])):hover {
   opacity: 0.6;
 }
 
@@ -1362,6 +1374,7 @@ body {
 }
 
 .form-date {
+  font-family: 'PT Sans', sans-serif;
   margin: 0;
   padding: 12px 20px;
   width: 440px;
