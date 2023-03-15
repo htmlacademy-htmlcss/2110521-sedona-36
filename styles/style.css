@@ -379,6 +379,7 @@ body {
 .activities-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   margin: 0;
@@ -750,11 +751,14 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  min-width: 150px;
 }
 
 .catalog-filter-group:nth-of-type(3) {
   margin-left: 70px;
+}
+
+.catalog-checkbox-block {
+  width: 150px;
 }
 
 .catalog-filter-item {
@@ -870,7 +874,7 @@ body {
 }
 
 .control-input:disabled + .control-mark,
-.control-input:disabled + .control-label {
+.control-input:disabled ~ .control-label {
   opacity: 0.3;
   pointer-events: none;
 }

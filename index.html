@@ -14,7 +14,7 @@
       <header class="page-header">
         <nav class="navigation">
           <a href="index.html" class="navigation-link-logo">
-            <img src="img/header-logo.svg" alt="Логотип Седона" class="page-header-logo" width="140" height="70">
+            <img src="img/header-logo.svg" alt="Логотип Седона." class="page-header-logo" width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -54,7 +54,7 @@
         <div class="page-container">
           <section class="main-index-header">
             <div class="main-index-wrapper">
-              <img class="main-index-logo" src="img/head-title.svg" alt="Лого-надпись Седона" width="458" height="352">
+              <img class="main-index-logo" src="img/head-title.svg" alt="Лого-надпись Седона." width="458" height="352">
               <div class="main-index-divider"></div>
             </div>
             <h1 class="main-index-title">Седона — небольшой городок в Аризоне,
@@ -69,7 +69,7 @@
                   <h3 class="advantages-item-title">Настоящий городок</h3>
                   <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img src="img/advatages-sedona.jpg" alt="Седона - небольшой город" class="advantages-image" width="800"
+                <img src="img/advatages-sedona.jpg" alt="Седона - небольшой город." class="advantages-image" width="800"
                   height="385">
               </li>
               <li class="advantages-item">
@@ -92,7 +92,7 @@
                 </div>
               </li>
               <li class="advantages-item">
-                <img src="img/advantages-bridge.jpg" alt="Фото моста дьявола" class="advantages-image" width="800"
+                <img src="img/advantages-bridge.jpg" alt="Фото моста дьявола." class="advantages-image" width="800"
                   height="385">
                 <div class="advantages-block">
                   <h3 class="advantages-item-title">Там есть<br>мост дьявола</h3>
@@ -143,7 +143,8 @@
             <p class="mail-text mail-text-white">Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="mail-field" type="email" name="mail-input" placeholder="Ваш e-mail">
+              <label class="visually-hidden" for="mail-fieled-label">Введите имейл</label>
+              <input class="mail-field" type="email" name="email-input" placeholder="Ваш e-mail" id="mail-fieled-label" required>
               <button class="mail-button button-blue" type="submit">Подписаться</button>
             </form>
           </section>
@@ -216,7 +217,7 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="form-label" for="check-in">Дата заезда:</label>
-              <input class="form-date" id="check-in" type="text" name="date-to" placeholder="Укажите дату">
+              <input class="form-date" id="check-in" type="text" name="check-in-date" placeholder="Укажите дату" required>
               <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
                 <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
                 <path
@@ -228,7 +229,7 @@
             <div class="text-date warning-text">Мы не можем отправить вас в прошлое.</div>
             <div class="field-group">
               <label class="form-label" for="check-out">Дата выезда:</label>
-              <input class="form-date" id="check-out" type="text" name="date-to" placeholder="Укажите дату">
+              <input class="form-date" id="check-out" type="text" name="check-out-date" placeholder="Укажите дату" required>
               <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
                 <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
                 <path
@@ -251,7 +252,7 @@
                       <span class="visually-hidden">Убавить количество взрослых.</span>
                     </button>
                   </div>
-                  <input type="number" class="amount-people-input" id="amount-people" name="amount-people" value="2"
+                  <input type="number" class="amount-people-input" id="amount-people" name="amount-of-adults" value="2"
                     required>
                   <div class="amount-people-button">
                     <button class="button-plus-minus" type="button">
@@ -279,7 +280,7 @@
                       <span class="visually-hidden">Убавить количество детей.</span>
                     </button>
                   </div>
-                  <input type="number" class="amount-people-input" id="amount-children" name="number-of-people"
+                  <input type="number" class="amount-people-input" id="amount-children" name="amount-of-kids"
                     value="2" required>
                   <div class="amount-people-button">
                     <button class="button-plus-minus" type="button">
